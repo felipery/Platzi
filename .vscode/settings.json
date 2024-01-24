@@ -1,5 +1,6 @@
 {
   "oneDarkPro.bold": true,
   "oneDarkPro.editorTheme": "One Dark Pro Darker",
-  "oneDarkPro.vivid": true
+  "oneDarkPro.vivid": true,
+  "livePreview.defaultPreviewPath": "/frontend-developer-1/clase9.html"
 }
