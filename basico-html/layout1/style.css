@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  --white: #ffffff;
+  --black: #000000;
+  --blue: #5baddb;
+  --lemon: #f4c513;
+  --light-blue: #9fcce1;
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
+}
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+header {
+  background-color: var(--light-blue);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav img {
+  width: 70px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 8px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+section {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: start;
+}
+
+section div {
+  display: flex;
+  width: 70px;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+}
+section div h1 {
+  display: flex;
+  width: 80%;
+  background-color: var(--light-blue);
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+  height: 30px;
+  color: var(--white);
+  font-size: var(--md);
+}
+
+aside {
+  background-color: var(--blue);
+  color: var(--white);
+  align-items: center;
+}
+aside h1 {
+  padding: 4px;
+  align-items: center;
+  font-size: var(--sm);
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: var(--light-blue);
+}
+footer h3 {
+  color: var(--white);
+}
