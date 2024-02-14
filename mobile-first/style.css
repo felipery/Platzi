@@ -1,0 +1,164 @@
+/* 
+1. Posicionamiento
+2. Modelo de Caja: tamaño, width, height
+3. Tipografía: tamaño, fuente
+4. Visuales: border radios
+5. Otros: 
+ */
+:root {
+  --linear-BG: linear-gradient(207.8deg, #201e1c 16.69%, #f7931a 100%);
+  --bitcoin-orange: #f7931a;
+  --soft-orange: #ffe9d5;
+  --secondary-blue: #1a9af7;
+  --soft-blue: #e7f5ff;
+  --warm-black: #201e1c;
+  --black: #282623;
+  --grey: #bababa;
+  --off-white: #faf8f7;
+  --just-white: #ffffff;
+  --secondary-grey: #757575;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "DM Sans", sans-serif;
+}
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-width: 320px;
+  height: 334px;
+  text-align: center;
+  background: var(--linear-BG);
+}
+
+.header--logo {
+  width: 150px;
+  height: 24px;
+  margin-top: 60px;
+  align-self: center;
+}
+
+.header--title-container {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  height: 218px;
+  margin-top: 50px;
+  text-align: center;
+  align-self: center;
+}
+
+.header--title-container h1 {
+  color: var(--just-white);
+  font-weight: bold;
+  line-height: 2.6rem;
+  font-size: 2.4rem;
+}
+
+.header--title-container p {
+  margin-top: 2.4rem;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+  color: var(--soft-orange);
+}
+
+.header--title-container .header--button {
+  position: absolute;
+  display: block;
+  bottom: -2.4rem;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1.2rem 1.6rem;
+  width: 22.9rem;
+  height: 4.8rem;
+  background-color: var(--off-white);
+  /*Sombra*/
+  box-shadow: 0rem 0.4rem 0.8rem rgba(89, 73, 30, 0.16);
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--warm-black);
+  text-decoration: none;
+}
+
+.header--button span {
+  display: inline-block;
+  width: 19px;
+  height: 18px;
+  margin-left: -1px;
+  background-image: url("./assets/icons/mdi_keyboard_arrow_down.svg");
+}
+
+main {
+  width: 100%;
+  height: auto;
+  padding-top: 6rem;
+  background-color: var(--off-white);
+}
+.main-exchange-container {
+  justify-content: center;
+  height: auto;
+  text-align: center;
+}
+
+.main-exchange-container .backgroundImg {
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 19.5rem;
+  height: 19.5em;
+  background-image: url("./assets/imgs/bitcoin.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-exchange-container .main-exchange-container--title {
+  width: 100%;
+  min-width: 28.8rem;
+  max-width: 90rem;
+}
+
+.main-exchange-container .main-exchange-container--title h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+  padding-top: 4rem;
+  color: var(--warm-black);
+}
+
+.main-exchange-container .main-exchange-container--title p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  padding-top: 3rem;
+  color: var(--secondary-grey);
+}
+
+.main-tables-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-tables-container h2 {
+  justify-content: left;
+}
+.main-tables-container .finance-table {
+  display: flex;
+  flex-direction: row;
+}
