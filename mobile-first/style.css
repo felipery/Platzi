@@ -150,15 +150,87 @@ main {
   color: var(--secondary-grey);
 }
 
-.main-tables-container {
-  display: flex;
-  flex-direction: column;
+.main-currency-table {
+  width: 70%;
+  min-width: 23.5rem;
+  max-width: 50rem;
+  height: 36rem;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
 }
 
-.main-tables-container h2 {
-  justify-content: left;
+.main-currency-table .currency-table--title {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.3rem;
+  color: var(--bitcoin-orange);
+  font-family: "DM Sans", sans-serif;
 }
-.main-tables-container .finance-table {
-  display: flex;
-  flex-direction: row;
+
+.currency-table--container {
+  width: 90%;
+  min-width: 23rem;
+  max-width: 30rem;
+  height: 25rem;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+}
+
+.currency-table--container table {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.8rem;
+}
+
+.currency-table--container td {
+  width: 50%;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.9rem;
+  color: #b5b0ac;
+  background-color: var(--just-white);
+}
+
+.currency-table--container .table__top-left {
+  border-radius: 0.8rem 0 0 0;
+}
+
+.currency-table--container .table__right {
+  border-radius: 0 0.8rem 0 0;
+}
+
+.currency-table--container .table__bottom-right {
+  border-radius: 0 0 0.8rem 0;
+}
+
+.currency-table--container .table__bottom-left {
+  border-radius: 0 0 0 0.8rem;
+}
+
+.currency-table--container .table__right {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+  color: var(--secondary-grey);
+}
+
+.currency-table--container .down {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url(./assets/icons/trending-down\ 1.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.currency-table--container .up {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url(./assets/icons/trending-up\ 1.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
