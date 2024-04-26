@@ -24,7 +24,13 @@ addBtn.addEventListener('click', (e) => {
     bookList.appendChild(li)
 
   }
-
   input.value = "";
 })
 
+removeBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  const text = input.value.toLowerCase();
+
+
+
+})
