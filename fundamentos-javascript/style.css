@@ -1,0 +1,127 @@
+:root {
+  --jungle-green: #2a9d90;
+  --fountain-blue: #58bbb4;
+  --light-fountain-blue: #d5f2ee;
+  --snow-drift: #f1f5f0;
+  --aqua-island: #9dd0d8;
+  --careys-pink: #d9a5a1;
+  --white: #fff;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: var(--careys-pink);
+}
+
+header h1 {
+  padding-left: 1rem;
+  color: var(--white);
+}
+
+.form {
+  height: 16rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 2rem;
+  gap: 1rem;
+}
+
+.form .label-title {
+  font-size: 2rem;
+  color: var(--jungle-green);
+}
+
+.input-text {
+  height: 3rem;
+  background-color: var(--light-fountain-blue);
+  border: none;
+  border-radius: 0.8rem;
+  padding-left: 0.5rem;
+  color: #208178;
+}
+
+.input-text:focus-visible {
+  outline: none;
+}
+
+.btn {
+  height: 2.5rem;
+  width: 10rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.8rem;
+}
+
+.btn-add {
+  color: var(--white);
+  background-color: var(--aqua-island);
+}
+.btn-add:active {
+  box-shadow: 2px 2px 5px var(--jungle-green);
+}
+
+.btn-remove {
+  color: var(--white);
+  background-color: var(--careys-pink);
+}
+.btn-remove:active {
+  box-shadow: 2px 2px 5px var(--jungle-green);
+}
+
+.list-of-books {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-top: 4rem;
+  padding-left: 1rem;
+}
+
+.list-of-books h2 {
+  font-size: 2rem;
+  color: var(--jungle-green);
+}
+
+.list-of-books ul {
+  padding-top: 1rem;
+  padding-left: 2rem;
+}
+.list-of-books li {
+  align-items: center;
+  justify-content: center;
+  list-style: url(./assets/book-icon.png);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: var(--careys-pink);
+}
+
+footer h3 {
+  font-size: 2rem;
+  color: var(--white);
+}
