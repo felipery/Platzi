@@ -2,5 +2,7 @@
   "oneDarkPro.bold": true,
   "oneDarkPro.editorTheme": "One Dark Pro Darker",
   "oneDarkPro.vivid": true,
-  "livePreview.defaultPreviewPath": "/frontend-developer-1/clase9.html"
+  "livePreview.defaultPreviewPath": "/frontend-developer-1/clase9.html",
+  "cSpell.language": "en,es,en-US",
+  "cSpell.words": ["Batatabit"]
 }
